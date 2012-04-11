@@ -3603,10 +3603,6 @@ android::status_t getVideoSizeByResolution(
             break;
 
         case M4VIDEOEDITING_kQCIF:
-            frameWidth = 176;
-            frameHeight = 144;
-            break;
-
         case M4VIDEOEDITING_kQVGA:
             frameWidth = 320;
             frameHeight = 240;
@@ -3623,12 +3619,8 @@ android::status_t getVideoSizeByResolution(
             break;
 
         case M4VIDEOEDITING_kWVGA:
-            frameWidth = 800;
-            frameHeight = 480;
-            break;
-
         case M4VIDEOEDITING_kNTSC:
-            frameWidth = 720;
+            frameWidth = 800;
             frameHeight = 480;
             break;
 
@@ -3637,21 +3629,13 @@ android::status_t getVideoSizeByResolution(
             frameHeight = 360;
             break;
 
-        case M4VIDEOEDITING_k854_480:
-            frameWidth = 854;
-            frameHeight = 480;
-            break;
-
+        case M4VIDEOEDITING_k1080_720:
         case M4VIDEOEDITING_k1280_720:
             frameWidth = 1280;
             frameHeight = 720;
             break;
 
-        case M4VIDEOEDITING_k1080_720:
-            frameWidth = 1080;
-            frameHeight = 720;
-            break;
-
+        case M4VIDEOEDITING_k854_480:
         case M4VIDEOEDITING_k960_720:
             frameWidth = 960;
             frameHeight = 720;
